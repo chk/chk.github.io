@@ -1,0 +1,44 @@
+baseURL = "https://chk.github.io/"
+languageCode = "de-de"
+defaultContentLanguage = "de"
+title = "chk"
+theme = "PaperMod"
+enableRobotsTXT = true
+
+[params]
+  description = "Blog und Notizen von Christian Korn"
+  author = "Christian Korn"
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = false
+
+  [params.homeInfoParams]
+    Title = "Willkommen 👋"
+    Content = "Hier schreibe ich über Dinge, die mich beschäftigen."
+
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/chk"
+
+# Navigation – neue Seiten hier eintragen
+[menu]
+  [[menu.main]]
+    name = "Blog"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 20
+  [[menu.main]]
+    name = "Über mich"
+    url = "/about/"
+    weight = 30
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup.goldmark.renderer]
+  unsafe = true
