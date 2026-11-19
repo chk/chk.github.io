@@ -1,0 +1,13 @@
+version: 2
+updates:
+  # Versionen der GitHub Actions im Workflow
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+
+  # Theme PaperMod (Git-Submodul)
+  - package-ecosystem: gitsubmodule
+    directory: /
+    schedule:
+      interval: weekly
