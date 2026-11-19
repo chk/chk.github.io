@@ -17,7 +17,7 @@ enableRobotsTXT = true
   [params.profileMode]
     enabled = true
     title = "Christian Korn"
-    subtitle = "Hier schreibe ich über Dinge, die mich beschäftigen."
+    subtitle = "Ich lasse Maschinen miteinander sprechen."
     imageUrl = "images/avatar.png"
     imageTitle = "Christian Korn"
     imageWidth = 120
@@ -33,6 +33,18 @@ enableRobotsTXT = true
 [[params.socialIcons]]
   name = "github"
   url = "https://github.com/chk"
+
+[[params.socialIcons]]
+  name = "linkedin"
+  url = "https://www.linkedin.com/in/christian-korn-801a67332/"
+
+[[params.socialIcons]]
+  name = "instagram"
+  url = "https://www.instagram.com/insta_chk/"
+
+[[params.socialIcons]]
+  name = "letterboxd"
+  url = "https://letterboxd.com/synfld/"
 
 # Navigation – neue Seiten hier eintragen
 [menu]
