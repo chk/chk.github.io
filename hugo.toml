@@ -8,15 +8,27 @@ enableRobotsTXT = true
 [params]
   description = "Blog und Notizen von Christian Korn"
   author = "Christian Korn"
-  ShowReadingTime = true
+  ShowReadingTime = false
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
   ShowToc = false
 
-  [params.homeInfoParams]
-    Title = "Willkommen 👋"
-    Content = "Hier schreibe ich über Dinge, die mich beschäftigen."
+  [params.profileMode]
+    enabled = true
+    title = "Christian Korn"
+    subtitle = "Hier schreibe ich über Dinge, die mich beschäftigen."
+    imageUrl = "images/avatar.png"
+    imageTitle = "Christian Korn"
+    imageWidth = 120
+    imageHeight = 120
+
+    [[params.profileMode.buttons]]
+      name = "Blog"
+      url = "/posts/"
+    [[params.profileMode.buttons]]
+      name = "Über mich"
+      url = "/about/"
 
 [[params.socialIcons]]
   name = "github"
@@ -42,3 +54,7 @@ enableRobotsTXT = true
 
 [markup.goldmark.renderer]
   unsafe = true
+
+# Blog-URLs mit Datum, z. B. /posts/2026/11/19/mein-titel/
+[permalinks]
+  posts = "/posts/:year/:month/:day/:contentbasename/"
