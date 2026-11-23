@@ -1,0 +1,7 @@
+/* Blocksatz mit Silbentrennung für Fließtext in Beiträgen und Seiten */
+.post-content p,
+.post-content li {
+    text-align: justify;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+}
